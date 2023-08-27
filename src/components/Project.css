@@ -1,0 +1,24 @@
+.scrollable-image-container {
+    width: 100%;
+    height: 300px; /* Adjust the height as needed */
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .scrolling-image {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    animation: scrollImage 20s linear infinite;
+  }
+  
+  @keyframes scrollImage {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(calc(-100% + 300px)); /* Adjust the offset */
+    }
+  }
+  
