@@ -39,7 +39,7 @@ const Projects = () => {
         </div>
 
         <div
-          className="card card-compact w-96  shadow-xl"
+          className="card card-compact md:w-96 lg:w-96 sm:w-full shadow-xl"
           data-aos="flip-right"
           data-aos-offset="300"
           data-aos-easing="ease-in-sine"
@@ -66,7 +66,7 @@ const Projects = () => {
         </div>
 
         <div
-          className="card card-compact w-96 shadow-xl"
+          className="card card-compact md:w-96 lg:w-96 sm:w-full shadow-xl"
           data-aos="flip-right"
           data-aos-offset="300"
           data-aos-easing="ease-in-sine"
