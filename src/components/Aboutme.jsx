@@ -14,7 +14,7 @@ const Aboutme = () => {
           >
             <img
               src="https://i.ibb.co/RpdrJNY/software-developer-6521720-640.jpg"
-              className="max-w-md rounded-lg shadow-2xl mask mask-circle"
+              className="max-w-md sm:max-w-none rounded-lg shadow-2xl mask mask-circle"
             />
           </div>
           <div
@@ -24,7 +24,7 @@ const Aboutme = () => {
             data-aos-duration="1000"
           >
             <p className="text-5xl text-blue-400 font-semibold">About Me</p>
-            <p className="py-6 text-lg">
+            <p className="md:py-6 lg:py-6 md:text-lg sm:text-base lg:text-lg">
               I am a skilled web developer with a Bachelor&rsquo;s degree in
               Computer Science. I aim to apply my technical skills and
               creativity to develop innovative, user-friendly web applications

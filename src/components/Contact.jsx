@@ -41,9 +41,9 @@ const Contact = () => {
 
   return (
     <div className="pb-10 mt-20" id="contact">
-      <div className="card lg:card-side shadow-xl mx-10 pb-5">
+      <div className="card lg:card-side shadow-xl md:mx-10 lg:mx-10 pb-5">
         <div
-          className="w-5/12 text-center"
+          className="md:w-5/12 lg:w-5/12 text-center"
           data-aos="zoom-in-down"
           data-aos-offset="300"
           data-aos-easing="ease-in-sine"

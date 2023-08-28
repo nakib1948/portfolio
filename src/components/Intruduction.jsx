@@ -15,7 +15,7 @@ const Intruduction = () => {
         >
         <img
           src="https://i.ibb.co/D9vVNyC/me.jpg"
-          className="max-w-lg rounded-lg shadow-2xl mask mask-decagon"
+          className="md:max-w-lg lg:max-w-lg sm:max-w-none rounded-lg shadow-2xl mask mask-decagon"
         />
         </div>
         <div
@@ -25,7 +25,7 @@ const Intruduction = () => {
           data-aos-duration="1000"
         >
           <p className="text-xl">Hi, I am</p>
-          <h1 className="text-5xl text-blue-300 font-serif my-5">
+          <h1 className="text-5xl  text-blue-300 font-serif my-5">
             MD. HAYAT HOSSAIN
           </h1>
           <TypeAnimation
