@@ -5,4 +5,6 @@
 body {
   background-color: #25274D;
   color: white; 
+ /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
 }
