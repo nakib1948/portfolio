@@ -34,7 +34,7 @@ const ArtandCraft = () => {
           }}
           navigation={true}
           modules={[Pagination, Navigation, Autoplay]}
-          className="md:h-[500px] lg:h-[500px]"
+          className="md:h-[500px] lg:h-[500px] mt-16"
         >
           <SwiperSlide>
             {" "}
