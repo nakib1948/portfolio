@@ -12,7 +12,7 @@ const Projects = () => {
       </p>
       <div className="grid m-5 grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6">
         <div
-          className="card card-compact w-96  shadow-xl"
+          className="card card-compact md:w-96 lg:w-96 sm:w-full  shadow-xl"
           data-aos="flip-right"
           data-aos-offset="300"
           data-aos-easing="ease-in-sine"
