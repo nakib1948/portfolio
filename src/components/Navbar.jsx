@@ -23,6 +23,9 @@ const Navbar = () => {
             <HashLink to="#contact" className="mx-5 text-base font-semibold">
               CONTACT
             </HashLink>
+            <Link to="/blog" className="text-base font-semibold">
+              BLOG
+            </Link>
           </ul>
         </div>
         <a className="btn btn-ghost normal-case text-xl text-[#7179e8] font-bold">
@@ -44,6 +47,9 @@ const Navbar = () => {
           <HashLink to="#contact" className="mx-5 text-base font-semibold">
             CONTACT
           </HashLink>
+          <Link to="/blog" className="text-base font-semibold">
+              BLOG
+           </Link>
         </ul>
       </div>
     </div>

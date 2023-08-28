@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ArtandCraft from "./components/ArtandCraft.jsx";
 import ToysStore from "./components/ToysStore.jsx";
 import Chefrecipe from "./components/Chefrecipe.jsx";
+import Blog from "./components/Blog.jsx";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path:"/chefrecipe",
     element:<Chefrecipe/>
+  },
+  {
+    path:"/blog",
+    element:<Blog/>
   }
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(
