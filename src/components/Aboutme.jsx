@@ -14,7 +14,7 @@ const Aboutme = () => {
           >
             <img
               src="https://i.ibb.co/RpdrJNY/software-developer-6521720-640.jpg"
-              className="max-w-md sm:max-w-none rounded-lg shadow-2xl mask mask-circle"
+              className="md:max-w-md lg:max-w-md sm:max-w-none rounded-lg shadow-2xl mask mask-circle"
             />
           </div>
           <div
