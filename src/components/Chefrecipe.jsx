@@ -56,7 +56,7 @@ const Chefrecipe = () => {
         </Swiper>
         <div className="my-12 mx-10 lg:mx-20 md:mx-20">
           <p className="text-4xl my-5 text-blue-300 font-semibold">
-            Toys-Store
+          ChefTastyTreats
           </p>
           <a
             href="https://github.com/nakib1948/cheftastytreats-client-side"
