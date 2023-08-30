@@ -68,7 +68,7 @@ const Contact = () => {
           </div>
           <div className="flex justify-center mt-4">
             <a
-              href="https://www.linkedin.com/in/hayat-hossain-834278207"
+              href="https://www.linkedin.com/in/hayat-hossain7"
               target="_blank"
               rel="noopener noreferrer"
             >
