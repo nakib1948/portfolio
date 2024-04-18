@@ -61,7 +61,7 @@ const Skills = () => {
           <div>
             <p className="text-xl pl-2 font-bold mb-2">C++</p>
             <ProgressBar
-              completed={85}
+              completed={60}
               height="30px"
               baseBgColor="#FFFFFF"
               labelColor="#e80909#FFFFFF"
@@ -70,7 +70,7 @@ const Skills = () => {
             />
           </div>
           <div>
-            <p className="text-xl pl-2 font-bold mb-2">JavaScript</p>
+            <p className="text-xl pl-2 font-bold mb-2">JAVASCRIPT</p>
             <ProgressBar
               completed={85}
               height="30px"
@@ -80,9 +80,20 @@ const Skills = () => {
               animateOnRender
             />
           </div>
-
+         
           <div>
             <p className="text-xl pl-2 font-bold mb-2">REACTJS</p>
+            <ProgressBar
+              completed={80}
+              height="30px"
+              baseBgColor="#FFFFFF"
+              labelColor="#e80909#FFFFFF"
+              transitionDuration="2s"
+              animateOnRender
+            />
+          </div>
+          <div>
+            <p className="text-xl pl-2 font-bold mb-2">REDUX</p>
             <ProgressBar
               completed={80}
               height="30px"
@@ -116,6 +127,17 @@ const Skills = () => {
               animateOnRender
             />
           </div>
+          <div>
+            <p className="text-xl pl-2 font-bold mb-2">MONGOOSE</p>
+            <ProgressBar
+              completed={70}
+              height="30px"
+              baseBgColor="#FFFFFF"
+              labelColor="#e80909#FFFFFF"
+              transitionDuration="2s"
+              animateOnRender
+            />
+          </div>
 
           <div>
             <p className="text-xl pl-2 font-bold mb-2">NODEJS</p>
@@ -132,7 +154,7 @@ const Skills = () => {
           <div>
             <p className="text-xl pl-2 font-bold mb-2">EXPRESSJS</p>
             <ProgressBar
-              completed={50}
+              completed={80}
               height="30px"
               baseBgColor="#FFFFFF"
               labelColor="#e80909#FFFFFF"
@@ -144,7 +166,7 @@ const Skills = () => {
           <div>
             <p className="text-xl pl-2 font-bold mb-2">TYPESCRIPT</p>
             <ProgressBar
-              completed={20}
+              completed={80}
               height="30px"
               baseBgColor="#FFFFFF"
               labelColor="#e80909#FFFFFF"
@@ -164,6 +186,29 @@ const Skills = () => {
               animateOnRender
             />
           </div>
+          <div>
+            <p className="text-xl pl-2 font-bold mb-2">POSTGRESSQL</p>
+            <ProgressBar
+              completed={75}
+              height="30px"
+              baseBgColor="#FFFFFF"
+              labelColor="#e80909#FFFFFF"
+              transitionDuration="2s"
+              animateOnRender
+            />
+          </div>
+          <div>
+            <p className="text-xl pl-2 font-bold mb-2">PRISMA</p>
+            <ProgressBar
+              completed={70}
+              height="30px"
+              baseBgColor="#FFFFFF"
+              labelColor="#e80909#FFFFFF"
+              transitionDuration="2s"
+              animateOnRender
+            />
+          </div>
+
         </div>
       </div>
     </div>

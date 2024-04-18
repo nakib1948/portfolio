@@ -1,6 +1,8 @@
 import summercampSrc from "../assets/summercampSRC.png";
 import toySrc from "../assets/Toyscr.png";
 import chefSrc from "../assets/chefSRC.jpg";
+import bookvalleySrc from "../assets/bookValley/bookvalleycover.png";
+import bookManagementSrc from "../assets/bookManagement/img1.png";
 import rightArrow from "../assets/icons8-right-arrow-48.png";
 import "./Project.css";
 import { Link } from "react-router-dom";
@@ -11,6 +13,58 @@ const Projects = () => {
         My Recent Projects
       </p>
       <div className="grid m-5 grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6">
+        <div
+          className="card card-compact md:w-96 lg:w-96 sm:w-full  shadow-xl"
+          data-aos="flip-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="1000"
+        >
+          <figure className="scrollable-image-container">
+            <img src={bookvalleySrc} alt="Shoes" className="scrolling-image" />
+          </figure>
+          <div className="card-body">
+            <h2 className="card-title">Book Valley </h2>
+            <p className="text-base">
+              A MERN stack project, simplifies the reader-writer-publisher
+              ecosystem by centralizing interactions. It opens avenues for new
+              writers to connect with publishers and offers affordable e-books
+              to readers
+            </p>
+            <div className="card-actions justify-end">
+              <Link to="/bookvalley" className="btn btn-outline btn-primary ">
+                {" "}
+                <span className="text-white">Details</span>{" "}
+                <img className="h-7" src={rightArrow} alt="" />{" "}
+              </Link>
+            </div>
+          </div>
+        </div>
+        <div
+          className="card card-compact md:w-96 lg:w-96 sm:w-full  shadow-xl"
+          data-aos="flip-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="1000"
+        >
+          <figure className="scrollable-image-container">
+            <img src={bookManagementSrc} alt="Shoes" className="scrolling-image" />
+          </figure>
+          <div className="card-body">
+            <h2 className="card-title">Book Management Dashboard</h2>
+            <p className="text-base">
+              A MERN stack project aims at a Book Management service with a Role
+              System and Cart Functionality.
+            </p>
+            <div className="card-actions justify-end">
+              <Link to="/bookmanagement" className="btn btn-outline btn-primary ">
+                {" "}
+                <span className="text-white">Details</span>{" "}
+                <img className="h-7" src={rightArrow} alt="" />{" "}
+              </Link>
+            </div>
+          </div>
+        </div>
         <div
           className="card card-compact md:w-96 lg:w-96 sm:w-full  shadow-xl"
           data-aos="flip-right"

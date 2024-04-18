@@ -7,6 +7,8 @@ import ArtandCraft from "./components/ArtandCraft.jsx";
 import ToysStore from "./components/ToysStore.jsx";
 import Chefrecipe from "./components/Chefrecipe.jsx";
 import Blog from "./components/Blog.jsx";
+import Bookvalley from "./components/Bookvalley.jsx";
+import BookManagement from "./components/BookManagement.jsx";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +26,14 @@ const router = createBrowserRouter([
   {
     path:"/chefrecipe",
     element:<Chefrecipe/>
+  },
+  {
+    path:"/bookvalley",
+    element:<Bookvalley/>
+  },
+  {
+    path:"/bookmanagement",
+    element:<BookManagement/>
   },
   {
     path:"/blog",

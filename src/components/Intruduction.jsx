@@ -30,9 +30,8 @@ const Intruduction = () => {
           </h1>
           <TypeAnimation
             sequence={[
-              // Same substring at the start will only be typed out once, initially
               "React.js Developer",
-              1000, // wait 1s before replacing "Mice" with "Hamsters"
+              1000, 
               "MERN Stack Developer",
               1000,
               "Front End Developer",
