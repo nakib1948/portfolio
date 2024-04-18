@@ -14,8 +14,8 @@ const Intruduction = () => {
           data-aos-duration="1000"
         >
         <img
-          src="https://i.ibb.co/D9vVNyC/me.jpg"
-          className="md:max-w-lg lg:max-w-lg sm:max-w-none rounded-lg shadow-2xl mask mask-decagon"
+          src="https://i.ibb.co/fn9qtzK/nakib.jpg"
+          className="md:max-w-sm lg:max-w-sm sm:max-w-none rounded-lg shadow-2xl mask mask-decagon"
         />
         </div>
         <div
