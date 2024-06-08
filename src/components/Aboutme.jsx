@@ -14,7 +14,7 @@ const Aboutme = () => {
           >
             <img
               src="https://i.ibb.co/RpdrJNY/software-developer-6521720-640.jpg"
-              className="md:max-w-md lg:max-w-md sm:max-w-none rounded-lg shadow-2xl mask mask-circle"
+              className="md:max-w-lg lg:max-w-lg sm:max-w-none rounded-lg shadow-2xl mask mask-circle"
             />
           </div>
           <div
@@ -25,19 +25,22 @@ const Aboutme = () => {
           >
             <p className="text-5xl text-blue-400 font-semibold">About Me</p>
             <p className="md:py-6 lg:py-6 md:text-lg sm:text-base lg:text-lg">
-              I am a skilled web developer with a Bachelor&rsquo;s degree in
-              Computer Science. I aim to apply my technical skills and
-              creativity to develop innovative, user-friendly web applications
-              that fulfill client and end-user needs. My specialization lies in
-              front-end development, utilizing technologies like React and the
-              MERN stack to create interfaces seamlessly blending functionality
-              with aesthetics. <br />
-              <br /> I am committed to continuous learning, and staying updated
-              with industry trends to incorporate the latest advancements into
-              my projects. Collaboration is central to my approach, as I thrive
-              in cross-functional teams where diverse perspectives drive
-              innovation. Let&rsquo;s work together to reimagine the digital
-              landscape and create impactful web solutions.
+              Hi there! I&rsquo;m Hayat, a passionate Full Stack Web Developer.
+              I recently earned my Bachelor of Science in Computer Science and
+              Engineering from the International Islamic University Chittagong.
+              I have a solid foundation in technologies such as Node.js, React,
+              Next.js, MongoDB, and PostgreSQL. I&rsquo;m deeply committed to
+              continuous learning and regularly keep up with industry trends to
+              ensure my projects incorporate the latest advancements. I thrive
+              in collaborative environments and believe that teamwork and
+              diverse perspectives are key to innovative solutions. I&rsquo;m
+              dedicated to applying my knowledge and skills to create meaningful
+              and efficient web applications. <br />
+              <br /> With a professional and enthusiastic approach, I am eager
+              to bring my expertise, dedication, and enthusiasm to a
+              forward-thinking organization. I am straightforward, confident,
+              and enjoy engaging with others, always striving to be kind and
+              compassionate in my interactions.
             </p>
             <a href={resume} download="Hayat(resume)">
               <button className="btn btn-outline btn-primary ">

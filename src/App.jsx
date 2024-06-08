@@ -6,18 +6,19 @@ import Intruduction from "./components/Intruduction";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
-
+import Snowfall from 'react-snowfall'
 function App() {
   return (
-    <>
+    <div  style={{  background: '#282c34', position: 'relative' }}>
+       <Snowfall  />
       <Navbar />
       <Intruduction />
       <Aboutme />
       <Skills />
       <Projects />
       <Contact />
-      <Footer/>
-    </>
+      <Footer />
+    </div>
   );
 }
 

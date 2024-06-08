@@ -36,6 +36,12 @@ const Intruduction = () => {
               1000,
               "Front End Developer",
               1000,
+              "Full Stack Developer",
+              1000,
+              "Back End Developer",
+              1000,
+              "Next.js Developer",
+              1000,
             ]}
             wrapper="span"
             speed={50}

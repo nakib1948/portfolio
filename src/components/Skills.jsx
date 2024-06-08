@@ -80,7 +80,7 @@ const Skills = () => {
               animateOnRender
             />
           </div>
-         
+
           <div>
             <p className="text-xl pl-2 font-bold mb-2">REACTJS</p>
             <ProgressBar
@@ -107,7 +107,7 @@ const Skills = () => {
           <div>
             <p className="text-xl pl-2 font-bold mb-2">FIREBASE</p>
             <ProgressBar
-              completed={70}
+              completed={30}
               height="30px"
               baseBgColor="#FFFFFF"
               labelColor="#e80909#FFFFFF"
@@ -178,7 +178,7 @@ const Skills = () => {
           <div>
             <p className="text-xl pl-2 font-bold mb-2">NEXTJS</p>
             <ProgressBar
-              completed={30}
+              completed={80}
               height="30px"
               baseBgColor="#FFFFFF"
               labelColor="#e80909#FFFFFF"
@@ -208,7 +208,17 @@ const Skills = () => {
               animateOnRender
             />
           </div>
-
+          <div>
+            <p className="text-xl pl-2 font-bold mb-2">GraphQL</p>
+            <ProgressBar
+              completed={20}
+              height="30px"
+              baseBgColor="#FFFFFF"
+              labelColor="#e80909#FFFFFF"
+              transitionDuration="2s"
+              animateOnRender
+            />
+          </div>
         </div>
       </div>
     </div>

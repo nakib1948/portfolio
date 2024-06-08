@@ -18,7 +18,7 @@ import Footer from "./Footer";
 const ToysStore = () => {
   return (
     <>
-      <div>
+      <div style={{ background: "#282c34" }}>
         <Navbar />
         <Swiper
           slidesPerView={1}
@@ -53,7 +53,7 @@ const ToysStore = () => {
             <img className="w-3/4 mx-auto" src={img6} alt="" />
           </SwiperSlide>
         </Swiper>
-        <div className="my-12 mx-10 lg:mx-20 md:mx-20">
+        <div className="mt-12 pb-5 mx-10 lg:mx-20 md:mx-20">
           <p className="text-4xl my-5 text-blue-300 font-semibold">
             Toys-Store
           </p>

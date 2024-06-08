@@ -1,6 +1,6 @@
 import summercampSrc from "../assets/summercampSRC.png";
 import toySrc from "../assets/Toyscr.png";
-import chefSrc from "../assets/chefSRC.jpg";
+import lfbg from "../assets/lostandfound/lfbg.png";
 import bookvalleySrc from "../assets/bookValley/bookvalleycover.png";
 import bookManagementSrc from "../assets/bookManagement/img1.png";
 import rightArrow from "../assets/icons8-right-arrow-48.png";
@@ -13,6 +13,34 @@ const Projects = () => {
         My Recent Projects
       </p>
       <div className="grid m-5 grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6">
+        <div
+          className="card card-compact md:w-96 lg:w-96 sm:w-full shadow-xl"
+          data-aos="flip-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="1000"
+        >
+          <figure className="scrollable-image-container">
+            <img src={lfbg} alt="Shoes" className="scrolling-image" />
+          </figure>
+          <div className="card-body">
+            <h2 className="card-title">Lost & Found Exchange</h2>
+            <p className="text-base">
+              A NextJs Website Lost and Found System enables users to report and
+              search for lost or found items securely. After signing up, users
+              can access the dashboard to submit detailed reports and browse
+              through listings. Verified claims are managed by the admin,
+              ensuring items are returned to their rightful owners while
+              maintaining a smooth and secure platform.
+            </p>
+            <div className="card-actions justify-end">
+              <Link to="/lostAndFound" className="btn btn-outline btn-primary ">
+                <span className="text-white">Details</span>{" "}
+                <img className="h-7" src={rightArrow} alt="" />{" "}
+              </Link>
+            </div>
+          </div>
+        </div>
         <div
           className="card card-compact md:w-96 lg:w-96 sm:w-full  shadow-xl"
           data-aos="flip-right"
@@ -48,7 +76,11 @@ const Projects = () => {
           data-aos-duration="1000"
         >
           <figure className="scrollable-image-container">
-            <img src={bookManagementSrc} alt="Shoes" className="scrolling-image" />
+            <img
+              src={bookManagementSrc}
+              alt="Shoes"
+              className="scrolling-image"
+            />
           </figure>
           <div className="card-body">
             <h2 className="card-title">Book Management Dashboard</h2>
@@ -57,7 +89,10 @@ const Projects = () => {
               System and Cart Functionality.
             </p>
             <div className="card-actions justify-end">
-              <Link to="/bookmanagement" className="btn btn-outline btn-primary ">
+              <Link
+                to="/bookmanagement"
+                className="btn btn-outline btn-primary "
+              >
                 {" "}
                 <span className="text-white">Details</span>{" "}
                 <img className="h-7" src={rightArrow} alt="" />{" "}
@@ -111,33 +146,6 @@ const Projects = () => {
             </p>
             <div className="card-actions justify-end">
               <Link to="/toysstore" className="btn btn-outline btn-primary ">
-                {" "}
-                <span className="text-white">Details</span>{" "}
-                <img className="h-7" src={rightArrow} alt="" />{" "}
-              </Link>
-            </div>
-          </div>
-        </div>
-
-        <div
-          className="card card-compact md:w-96 lg:w-96 sm:w-full shadow-xl"
-          data-aos="flip-right"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
-          data-aos-duration="1000"
-        >
-          <figure className="scrollable-image-container">
-            <img src={chefSrc} alt="Shoes" className="scrolling-image" />
-          </figure>
-          <div className="card-body">
-            <h2 className="card-title">ChefTastyTreats</h2>
-            <p className="text-base">
-              A MERN stack project for an e-commerce platform to explore famous
-              chefs&rsquo; recipes, showcasing profiles, detailed dishes, and
-              personalized favorites, accessed securely via user login
-            </p>
-            <div className="card-actions justify-end">
-              <Link to="/chefrecipe" className="btn btn-outline btn-primary ">
                 {" "}
                 <span className="text-white">Details</span>{" "}
                 <img className="h-7" src={rightArrow} alt="" />{" "}
