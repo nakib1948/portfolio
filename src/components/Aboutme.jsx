@@ -10,7 +10,7 @@ const Aboutme = () => {
             data-aos="flip-right"
             data-aos-offset="300"
             data-aos-easing="ease-in-sine"
-            data-aos-duration="1000"
+            data-aos-duration="300"
           >
             <img
               src="https://i.ibb.co/RpdrJNY/software-developer-6521720-640.jpg"
@@ -24,7 +24,7 @@ const Aboutme = () => {
             data-aos-duration="1000"
           >
             <p className="text-5xl text-blue-400 font-semibold">About Me</p>
-            <p className="md:py-6 lg:py-6 md:text-lg sm:text-base lg:text-lg">
+            <p className="md:py-6  lg:py-6 md:text-lg sm:text-base lg:text-lg">
               Hi there! I&rsquo;m Hayat, a passionate Full Stack Web Developer.
               I recently earned my Bachelor of Science in Computer Science and
               Engineering from the International Islamic University Chittagong.

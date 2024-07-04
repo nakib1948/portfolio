@@ -5,36 +5,25 @@ import "swiper/css/navigation";
 
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
 
-import git from "../assets/icons8-github-50.png";
-import live from "../assets/icons8-eye-50.png";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
-import { useEffect } from "react";
-import { useState } from "react";
+import git from "../../assets/icons8-github-50.png";
+import live from "../../assets/icons8-eye-50.png";
+import Navbar from "../Navbar";
+import Footer from "../Footer";
+import { useParams } from "react-router-dom";
+import { useGetSingleProjectQuery } from "../../redux/api/projectApi";
+import Loader from "../shared/Loader";
 
-const BookManagement = () => {
-  const [images, setImages] = useState([]);
+const ProjectDetails = () => {
+  const { id } = useParams();
+  const { data, isLoading } = useGetSingleProjectQuery(id);
+  if (isLoading) {
+    return <Loader />;
+  }
 
-  const importImages = async () => {
-    const images = [];
-    for (let i = 1; i <= 9; i++) {
-      const image = await import(`../assets/bookManagement/img${i}.png`);
-      images.push(image.default);
-    }
-    return images;
-  };
-
-  useEffect(() => {
-    const loadImages = async () => {
-      const loadedImages = await importImages();
-      setImages(loadedImages);
-    };
-    loadImages();
-  }, []);
   return (
     <>
-      <div style={{ background: "#282c34" }}>
-        <Navbar />
+      <Navbar />
+      <div className="pt-20" style={{ background: "#282c34" }}>
         <Swiper
           slidesPerView={1}
           spaceBetween={30}
@@ -45,9 +34,9 @@ const BookManagement = () => {
           }}
           navigation={true}
           modules={[Pagination, Navigation, Autoplay]}
-          className="md:h-[500px] lg:h-[500px] mt-16"
+          className="md:h-[500px] lg:h-[500px] "
         >
-          {images.map((img, index) => (
+          {data?.data?.image.map((img, index) => (
             <SwiperSlide key={index}>
               <img className="w-3/4 mx-auto" src={img} alt="" />
             </SwiperSlide>
@@ -55,10 +44,10 @@ const BookManagement = () => {
         </Swiper>
         <div className="mt-12 pb-5 mx-10 lg:mx-20 md:mx-20">
           <p className="text-4xl my-5 text-blue-300 font-semibold">
-            Book Management Dashboard
+            {data?.data?.name}
           </p>
           <a
-            href="https://github.com/nakib1948/Book-Management-Dashboard-client"
+            href={data?.data?.client}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -69,7 +58,7 @@ const BookManagement = () => {
             </button>
           </a>
           <a
-            href="https://github.com/nakib1948/Book-Management-Dashboard-server"
+            href={data?.data?.server}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -80,7 +69,7 @@ const BookManagement = () => {
             </button>
           </a>
           <a
-            href="https://enchanting-liger-81b4b8.netlify.app/"
+            href={data?.data?.liveSite}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -91,21 +80,7 @@ const BookManagement = () => {
             </button>
           </a>
           <p className="text-3xl my-5 text-blue-300 font-semibold">Features:</p>
-          <p className="text-lg">
-            ● user has to sign in to access the dashboard.
-            <br />
-            ● user can signup if the user does not have an account. <br />
-            ● user can add products, update and delete product.
-            <br />
-            ● user can filter and search any product based on any field. <br />
-            ● user can sell product to customer. <br />
-            ● customer sales history has a filter system based on day, week,
-            month, and year.
-            <br />
-            ● Technology Used : Typescript, ReactJS, MongoDB, Mongoose, Material
-            Tailwind,
-            <br /> JWT, ExpressJs, Zod Validation and more.
-          </p>
+          <p className="text-lg">{data?.data?.details}</p>
         </div>
       </div>
       <Footer />
@@ -113,4 +88,4 @@ const BookManagement = () => {
   );
 };
 
-export default BookManagement;
+export default ProjectDetails;
